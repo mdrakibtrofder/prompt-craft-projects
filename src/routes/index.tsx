@@ -189,9 +189,7 @@ function Index() {
 
       {/* Footer */}
       <footer className="border-t border-gray-100 bg-[#f9f9f9]">
-        <div className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-gray-500">
-          A classroom experiment in AI-powered learning · 35 student projects built in one session
-        </div>
+        <div className="mx-auto max-w-6xl px-6 py-10 text-center text-sm text-gray-500" />
       </footer>
     </div>
   );
