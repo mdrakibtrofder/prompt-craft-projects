@@ -108,12 +108,15 @@ function Index() {
 
             <div className="mt-8 flex flex-wrap justify-center gap-2">
               {AI_TOOLS.map((tool) => (
-                <span
-                  key={tool}
-                  className="rounded-full border border-gray-200 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm backdrop-blur"
+                <a
+                  key={tool.name}
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-gray-200 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-indigo-700 underline decoration-indigo-400 decoration-1 underline-offset-4 shadow-sm backdrop-blur transition-all hover:border-indigo-300 hover:bg-white hover:text-indigo-800 hover:decoration-indigo-600"
                 >
-                  {tool}
-                </span>
+                  {tool.name}
+                </a>
               ))}
             </div>
 
