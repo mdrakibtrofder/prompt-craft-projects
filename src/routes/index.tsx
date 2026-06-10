@@ -4,7 +4,14 @@ import { Search, Sparkles } from "lucide-react";
 import { CATEGORIES, PROJECTS } from "@/lib/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 
-const HERO_SLIDES = ["/hero/hero-1.jpg", "/hero/hero-2.jpg", "/hero/hero-3.jpg"];
+const HERO_SLIDES = [
+  "/hero/hero-2.jpg",
+  "/hero/hero-3.jpg",
+  "/hero/hero-4.jpg",
+  "/hero/hero-5.jpg",
+  "/hero/hero-6.jpg",
+  "/hero/hero-7.jpg",
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,7 +40,12 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const AI_TOOLS = ["Claude", "Gemini", "ChatGPT", "Lovable"];
+const AI_TOOLS: { name: string; url: string }[] = [
+  { name: "Claude", url: "https://claude.ai" },
+  { name: "Gemini", url: "https://gemini.google.com" },
+  { name: "ChatGPT", url: "https://chatgpt.com" },
+  { name: "Lovable", url: "https://lovable.dev" },
+];
 
 function Index() {
   const [query, setQuery] = useState("");
