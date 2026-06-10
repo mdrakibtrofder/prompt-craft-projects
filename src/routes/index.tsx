@@ -4,7 +4,14 @@ import { Search, Sparkles } from "lucide-react";
 import { CATEGORIES, PROJECTS } from "@/lib/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 
-const HERO_SLIDES = ["/hero/hero-1.jpg", "/hero/hero-2.jpg", "/hero/hero-3.jpg"];
+const HERO_SLIDES = [
+  "/hero/hero-2.jpg",
+  "/hero/hero-3.jpg",
+  "/hero/hero-4.jpg",
+  "/hero/hero-5.jpg",
+  "/hero/hero-6.jpg",
+  "/hero/hero-7.jpg",
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -33,7 +40,12 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const AI_TOOLS = ["Claude", "Gemini", "ChatGPT", "Lovable"];
+const AI_TOOLS: { name: string; url: string }[] = [
+  { name: "Claude", url: "https://claude.ai" },
+  { name: "Gemini", url: "https://gemini.google.com" },
+  { name: "ChatGPT", url: "https://chatgpt.com" },
+  { name: "Lovable", url: "https://lovable.dev" },
+];
 
 function Index() {
   const [query, setQuery] = useState("");
@@ -96,12 +108,15 @@ function Index() {
 
             <div className="mt-8 flex flex-wrap justify-center gap-2">
               {AI_TOOLS.map((tool) => (
-                <span
-                  key={tool}
-                  className="rounded-full border border-gray-200 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm backdrop-blur"
+                <a
+                  key={tool.name}
+                  href={tool.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-full border border-gray-200 bg-white/90 px-3.5 py-1.5 text-xs font-medium text-indigo-700 underline decoration-indigo-400 decoration-1 underline-offset-4 shadow-sm backdrop-blur transition-all hover:border-indigo-300 hover:bg-white hover:text-indigo-800 hover:decoration-indigo-600"
                 >
-                  {tool}
-                </span>
+                  {tool.name}
+                </a>
               ))}
             </div>
 
