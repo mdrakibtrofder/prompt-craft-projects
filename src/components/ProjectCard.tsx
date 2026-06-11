@@ -19,7 +19,7 @@ export function ProjectCard({ project }: { project: Project }) {
         )}
         {!errored ? (
           <img
-            src={`/screenshots/${project.slug}.jpg`}
+            src={`${import.meta.env.BASE_URL}screenshots/${project.slug}.jpg`}
             alt={`${project.name} screenshot`}
             loading="lazy"
             onLoad={() => setLoaded(true)}

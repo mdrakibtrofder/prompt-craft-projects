@@ -4,13 +4,14 @@ import { Search, Sparkles } from "lucide-react";
 import { CATEGORIES, PROJECTS } from "@/lib/projects";
 import { ProjectCard } from "@/components/ProjectCard";
 
+const BASE = import.meta.env.BASE_URL;
 const HERO_SLIDES = [
-  "/hero/hero-2.jpg",
-  "/hero/hero-3.jpg",
-  "/hero/hero-4.jpg",
-  "/hero/hero-5.jpg",
-  "/hero/hero-6.jpg",
-  "/hero/hero-7.jpg",
+  `${BASE}hero/hero-2.jpg`,
+  `${BASE}hero/hero-3.jpg`,
+  `${BASE}hero/hero-4.jpg`,
+  `${BASE}hero/hero-5.jpg`,
+  `${BASE}hero/hero-6.jpg`,
+  `${BASE}hero/hero-7.jpg`,
 ];
 
 export const Route = createFileRoute("/")({
