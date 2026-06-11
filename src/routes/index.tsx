@@ -76,8 +76,8 @@ function Index() {
               Classroom Showcase
             </div>
             <h1 className="text-balance text-4xl font-extrabold tracking-tight text-gray-900 drop-shadow-sm sm:text-5xl md:text-6xl">
-              AI-Powered Projects Creation
-              <span className="block text-indigo-600">Classwork on Ethics Course</span>
+              AI-Powered Projects Creation Classwork on 
+              <span className="block text-indigo-600">Professional Issues and Ethics Course</span>
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-balance text-base text-gray-700 sm:text-lg">
               Built with Claude · Gemini · ChatGPT · Lovable

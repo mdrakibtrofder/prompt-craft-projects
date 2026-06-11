@@ -37,7 +37,6 @@ const RAW: Omit<Project, "category">[] = [
   { name: "Study Planner", student: "Swapnil Sett", url: "https://crisp-study-plan.lovable.app/dashboard", slug: "study-planner" },
   { name: "TalentForge", student: "Masuma Sadia Sagota", url: "https://nexus-talent-engine.lovable.app", slug: "talentforge" },
   { name: "MediMate", student: "MST. Sumya Jafrin", url: "https://medimatehealthcompanion.lovable.app", slug: "medimate" },
-  { name: "Maison de Hair", student: "Zerin Tasnim Trisa", url: "https://maison-hair-luxe.lovable.app/", slug: "maison-de-hair" },
   { name: "Fast Courier Service", student: "Tanvir Hasan Priom", url: "https://priom-fast-courier.lovable.app", slug: "fast-courier-service" },
   { name: "Urban Living Concierge", student: "Nazmun Naher Anika", url: "https://urbanharvest-ai-concierge.lovable.app/", slug: "urban-living-concierge" },
   { name: "FoodSnap", student: "Maisha Tasfia", url: "https://palate-pointers.lovable.app", slug: "foodsnap" },
@@ -47,17 +46,16 @@ const RAW: Omit<Project, "category">[] = [
   { name: "FreshCart", student: "MD EMAM MASUM", url: "https://freshcart-220201056-masum-3.lovable.app/", slug: "freshcart" },
   { name: "Password Manager", student: "Md Mominul Islam", url: "https://smart-password-manager4.lovable.app", slug: "password-manager" },
   { name: "BazaarBD", student: "Zihan Hossain", url: "https://shuru-dhaka-shop.lovable.app/", slug: "bazaarbd" },
-  { name: "Portfolio", student: "Md Nafsun Kabir", url: "https://nafsunkabir.lovable.app", slug: "portfolio" },
   { name: "MediSync AI", student: "Miftahul Jannat", url: "https://medimind-link.lovable.app", slug: "medisync-ai" },
   { name: "Rentify", student: "Syed Rifat", url: "https://rentify-q.lovable.app", slug: "rentify" },
-  { name: "Student Admission", student: "Md Sifat Rana", url: "https://reyadacademy.lovable.app/", slug: "student-admission" },
+  { name: "Noorbazaar", student: "Jannatul suraiya", url: "https://noorbazaar-aura-boutique.lovable.app", slug: "noorbazaar" },
 ];
 
 const RULES: [Category, string[]][] = [
   ["Health", ["medi", "health", "vital", "hospital", "mind"]],
   ["Agriculture", ["agro", "farm", "harvest", "crop"]],
   ["Education", ["study", "university", "campus", "unisys", "academy", "coaching", "admission"]],
-  ["E-commerce", ["shop", "cart", "store", "bazaar", "grocery", "courier", "rentify", "food", "gear", "scoop", "hair"]],
+  ["E-commerce", ["shop", "cart", "store", "bazaar", "grocery", "courier", "rentify", "food", "gear", "scoop", "hair", "noorbazar"]],
   ["AI Tools", ["ai", "codesense", "storyweave", "talentforge", "curiostream"]],
   ["Finance", ["hisab", "password", "finance", "budget"]],
 ];
