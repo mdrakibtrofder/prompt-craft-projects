@@ -4,7 +4,6 @@ export type Category =
   | "Education"
   | "E-commerce"
   | "AI Tools"
-  | "Finance"
   | "Other";
 
 export interface Project {
@@ -57,7 +56,6 @@ const RULES: [Category, string[]][] = [
   ["Education", ["study", "university", "campus", "unisys", "academy", "coaching", "admission"]],
   ["E-commerce", ["shop", "cart", "store", "bazaar", "grocery", "courier", "rentify", "food", "gear", "scoop", "hair", "noorbazar"]],
   ["AI Tools", ["ai", "codesense", "storyweave", "talentforge", "curiostream"]],
-  ["Finance", ["hisab", "password", "finance", "budget"]],
 ];
 
 function categorize(name: string): Category {
@@ -77,7 +75,6 @@ export const CATEGORIES: ("All" | Category)[] = [
   "Education",
   "E-commerce",
   "AI Tools",
-  "Finance",
   "Other",
 ];
 
@@ -87,6 +84,5 @@ export const CATEGORY_COLORS: Record<Category, string> = {
   Education: "bg-amber-50 text-amber-700 ring-amber-200",
   "E-commerce": "bg-blue-50 text-blue-700 ring-blue-200",
   "AI Tools": "bg-indigo-50 text-indigo-700 ring-indigo-200",
-  Finance: "bg-teal-50 text-teal-700 ring-teal-200",
   Other: "bg-gray-100 text-gray-700 ring-gray-200",
 };
