@@ -14,29 +14,6 @@ const HERO_SLIDES = [
 ];
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "AI-Powered Projects · Ethics Course Classwork" },
-      {
-        name: "description",
-        content:
-          "Student projects built in a single class session with Claude, Gemini, ChatGPT, and Lovable. This is what learning looks like with AI.",
-      },
-      { property: "og:title", content: "AI-Powered Projects · Ethics Course Classwork" },
-      {
-        property: "og:description",
-        content: "Student projects built with Claude, Gemini, ChatGPT, and Lovable in one class session.",
-      },
-    ],
-    links: [
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
-      {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap",
-      },
-    ],
-  }),
   component: Index,
 });
 
